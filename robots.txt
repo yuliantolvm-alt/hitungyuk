@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://USERNAME.github.io/hitungyuk/sitemap.xml
+Sitemap: https://yuliantolvm-alt.github.io/hitungyuk/sitemap.xml
