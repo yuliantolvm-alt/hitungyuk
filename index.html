@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HitungYuk menyediakan kalkulator gratis untuk umur, BMI, diskon, persentase, luas tanah, dan kebutuhan sehari-hari.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>HitungYuk — Kalkulator Gratis Indonesia</title>
+  <link rel="canonical" href="https://USERNAME.github.io/hitungyuk/">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"HitungYuk",
+    "url":"https://USERNAME.github.io/hitungyuk/",
+    "description":"Kalkulator gratis untuk kebutuhan sehari-hari."
+  }
+  </script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="./" aria-label="HitungYuk Beranda"><span>H</span> HitungYuk</a>
+    <a class="nav-link" href="#kalkulator">Kalkulator</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">GRATIS • CEPAT • TANPA LOGIN</p>
+        <h1>Hitung apa pun dengan lebih mudah.</h1>
+        <p class="hero-copy">Kalkulator sederhana untuk kebutuhan sehari-hari. Semua perhitungan dilakukan langsung di perangkat Anda.</p>
+        <a class="button primary" href="#kalkulator">Mulai menghitung</a>
+      </div>
+      <div class="hero-card" aria-label="Contoh kalkulator">
+        <div class="mini-label">Contoh</div>
+        <div class="mini-number">500.000 × 20%</div>
+        <div class="mini-result">Hemat Rp100.000</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="kalkulator" class="container section">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">TOOLS</p>
+        <h2>Kalkulator populer</h2>
+      </div>
+      <label class="search-box">
+        <span class="sr-only">Cari kalkulator</span>
+        <input id="toolSearch" type="search" maxlength="60" autocomplete="off" placeholder="Cari kalkulator...">
+      </label>
+    </div>
+
+    <div id="toolGrid" class="tool-grid">
+      <button class="tool-card" data-tool="discount">
+        <span class="icon">%</span><strong>Kalkulator Diskon</strong><small>Hitung harga setelah diskon.</small>
+      </button>
+      <button class="tool-card" data-tool="percentage">
+        <span class="icon">%</span><strong>Kalkulator Persentase</strong><small>Hitung persentase dari dua angka.</small>
+      </button>
+      <button class="tool-card" data-tool="age">
+        <span class="icon">🎂</span><strong>Kalkulator Umur</strong><small>Hitung umur berdasarkan tanggal lahir.</small>
+      </button>
+      <button class="tool-card" data-tool="bmi">
+        <span class="icon">⚖</span><strong>Kalkulator BMI</strong><small>Hitung indeks massa tubuh.</small>
+      </button>
+      <button class="tool-card" data-tool="area">
+        <span class="icon">▣</span><strong>Luas Persegi Panjang</strong><small>Hitung luas tanah atau bidang.</small>
+      </button>
+      <button class="tool-card" data-tool="convert">
+        <span class="icon">↔</span><strong>Konversi Satuan</strong><small>Konversi kg, gram, meter, cm.</small>
+      </button>
+    </div>
+    <p id="emptyState" class="empty" hidden>Kalkulator tidak ditemukan.</p>
+  </section>
+
+  <section id="calculatorPanel" class="container section panel-section" hidden>
+    <div class="calculator">
+      <div class="calculator-head">
+        <button id="closeCalculator" class="text-button" type="button">← Kembali</button>
+        <p class="eyebrow" id="calculatorCategory">KALKULATOR</p>
+        <h2 id="calculatorTitle">Kalkulator</h2>
+        <p id="calculatorDescription"></p>
+      </div>
+      <form id="calculatorForm" novalidate>
+        <div id="formFields" class="form-grid"></div>
+        <button class="button primary" type="submit">Hitung</button>
+        <p id="formError" class="form-error" role="alert" hidden></p>
+      </form>
+      <div id="resultBox" class="result" aria-live="polite" hidden>
+        <span>Hasil</span>
+        <strong id="resultValue"></strong>
+        <p id="resultNote"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container info-grid">
+    <article class="info-card">
+      <h2>Kenapa HitungYuk?</h2>
+      <p>Tools dibuat sederhana, cepat, dan mudah dipahami. Tidak perlu membuat akun untuk menggunakan kalkulator.</p>
+    </article>
+    <article class="info-card">
+      <h2>Privasi</h2>
+      <p>Versi awal ini tidak mengirim angka yang Anda masukkan ke server. Perhitungan dasar dilakukan di browser.</p>
+    </article>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© 2026 HitungYuk</span>
+    <span>Versi awal — kalkulator gratis Indonesia</span>
+  </div>
+</footer>
+<script src="app.js" defer></script>
+</body>
+</html>
